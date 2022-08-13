@@ -1,9 +1,9 @@
-
+@import url(../vendor/fonts/font.css);
 
 *{
   box-shadow: 0 0 2px red;
 }
-
+  
 
 .page {
   max-width: 1280px;
@@ -16,7 +16,9 @@
   background: #2A2C2F;
   margin: 0 auto;
   color: #FFFFFF;
+  font-family: 'Inter', 'Arial', sans-serif;
 }
+
 .page__section {
   /*margin: 0 auto;*/
   padding: 0 48px;
@@ -48,9 +50,31 @@ padding: 0 48px 0;
 .header__lang-link {
   box-sizing: border-box;
   margin-left: 18px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+  color: #FFFFFF;
+ 
+  text-decoration-line: none;
 }
+
+.header__lang-link_text-decoration-On {
+  text-decoration-line: underline;
+
+
+}
+
+.header__lang-link_text-decoration-Off {
+  text-decoration-line: none;
+
+  
+}
+
 .header__logo {
-  background: black;
+  
 }
 .lead {
   margin: 0;
@@ -69,6 +93,13 @@ padding: 0 48px 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 720px;
+  
+font-style: normal;
+font-weight: 900;
+font-size: 96px;
+line-height: 100px;
+text-align: center;
 
   margin: 0 auto;
   margin-bottom: 32px;
@@ -78,6 +109,15 @@ padding: 0 48px 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 640px;
+  
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+
+text-align: center;
 
   margin: 0 auto;
   margin-bottom: 64px;
@@ -85,6 +125,17 @@ padding: 0 48px 0;
 }
 .lead__image {
   margin-bottom: 8px;
+}
+.lead__caption {
+ 
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height, or 140% */
+
+letter-spacing: 1.5px;
+text-transform: uppercase;
 }
 
 .intro  {
@@ -100,6 +151,11 @@ padding: 0 48px 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
+font-style: normal;
+font-weight: 900;
+font-size: 54px;
+line-height: 58px;
   
   /*margin: 0 auto;*/
   /*margin: 0 148px 0;*/
@@ -109,6 +165,11 @@ padding: 0 48px 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 163%;
   margin-bottom: 33px;
 }
 
@@ -116,16 +177,30 @@ padding: 0 48px 0;
   padding: 0;
   margin: 0;
   list-style: none;
+ 
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
 }
 
 .photo-grid {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding: 0 48px;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  column-gap: 16px;
+  row-gap:  16px;
 
   padding-top: 92px;
 }
-
+.photo-grid__item {
+  object-fit: cover;
+  width: 100%;
+}
 .places {
   padding: 0;
   margin: 0;
@@ -152,7 +227,7 @@ padding: 0 48px 0;
   background-repeat: no-repeat;
   min-height: 740px;
   background-position: center;
-  
+  max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-trains.jpg);
   /*background-size: 867px 637px;
   position: relative;
@@ -170,7 +245,7 @@ padding: 0 48px 0;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter';
+ 
   font-style: normal;
   max-width: 560px;
   font-weight: 900;
@@ -188,7 +263,7 @@ padding: 0 48px 0;
   padding: 0;
   margin: 0;
   max-width: 360px;
-  font-family: 'Inter';
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -227,7 +302,7 @@ padding: 0 48px 0;
 .footer__link {
   margin: 0;
   padding: 0;
-  font-family: 'Inter';
+ 
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -246,7 +321,7 @@ color: #FFFFFF;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter';
+ 
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
