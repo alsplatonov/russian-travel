@@ -1,26 +1,260 @@
 
 
- *{
+*{
   box-shadow: 0 0 2px red;
 }
 
 
 .page {
-  width: 1280px;
+  max-width: 1280px;
   padding: 0;
   /*display: flex;
   flex-direction: column;
 
   box-sizing: border-box;
   justify-content: center;*/
+  background: #2A2C2F;
   margin: 0 auto;
+  color: #FFFFFF;
 }
+.page__section {
+  /*margin: 0 auto;*/
+  padding: 0 48px;
+} 
 
 .header {
+  /*
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  padding: 28px 48px 56px; 
+  max-width: 1280px;
+*/
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+/*flex: 1;*/
+padding: 0 48px 0;
+  
+  
+ /*padding-top: 28px;
+  /*margin: 28px 48px;*/
+ /* display: flex;
+  justify-content:space-between;*/
  
  
+}
+
+.header__lang-link {
+  box-sizing: border-box;
+  margin-left: 18px;
+}
+.header__logo {
+  background: black;
+}
+.lead {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  padding: 56px 148px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.lead__title {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+}
+.lead__subtitle {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  margin-bottom: 64px;
+
+}
+.lead__image {
+  margin-bottom: 8px;
+}
+
+.intro  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 690px;
+  margin: 0 148px 0;
+  padding-top: 98px;
+}
+
+.intro__title{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  /*margin: 0 auto;*/
+  /*margin: 0 148px 0;*/
+  margin-bottom: 40px;
+}
+.intro__text{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+}
+
+.intro__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.photo-grid {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  padding-top: 92px;
+}
+
+.places {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+ 
+  padding: 92px 148px 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+.place {
+  display: flex;
+  flex-direction: row;
+}
+
+.cover {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*padding-top: 92px;*/
+  
+  
+  background-repeat: no-repeat;
+  min-height: 740px;
+  background-position: center;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-trains.jpg);
+  /*background-size: 867px 637px;
+  position: relative;
+  background-color: #f2f2f2;*/
+  padding: 92px 48px 0;
+  padding-left: 48px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.cover__title{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  max-width: 560px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+
+
+}
+
+.cover__subtitle{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 360px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  
+  }
+
+
+.footer {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 92px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 18px;
+ 
+
+}
+
+.footer__link {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+
+
+color: #FFFFFF;
+
+  margin-right: 18px;
+ 
+
+}
+
+.footer__copyright {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+
+  padding-top: 92px;
+  padding-bottom: 24px;
+
+
 }
