@@ -1,4 +1,6 @@
 @import url(../vendor/fonts/font.css);
+@import url(../styles/normalize.css);
+
 
 *{
   box-shadow: 0 0 2px red;
@@ -111,10 +113,11 @@ text-align: center;
   box-sizing: border-box;
   max-width: 640px;
   
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
 
 
 text-align: center;
@@ -191,7 +194,7 @@ line-height: 18px;
   padding: 0 48px;
 
   display: grid;
-  grid-template-columns: repeat(4,1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   column-gap: 16px;
   row-gap:  16px;
 
@@ -208,13 +211,49 @@ line-height: 18px;
 
  
   padding: 92px 148px 0;
-  display: flex;
-  flex-direction: column;
+
+ 
   
 }
 .place {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;
+  flex-direction: row;*/
+  /*display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: repeat(3, minmax(AUTO, 1fr));*/
+
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) 1.05fr;
+  grid-template-rows: minmax(min-content, max-content) 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
+  margin-bottom: 80px;
+  
+}
+
+.place__image {
+  object-fit: fill;
+  width: 100%;
+  /*grid-row-start: 2;
+  grid-row-end: 3;*/
+}
+
+.place__title {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 76px;
+align-self: end;
+}
+.place__website {
+  align-self: end;
+
+}
+.place__paragraph {
+  
 }
 
 .cover {
@@ -229,10 +268,13 @@ line-height: 18px;
   background-position: center;
   max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-trains.jpg);
+  /*background-origin: content-box;*/
+
+  
   /*background-size: 867px 637px;
   position: relative;
   background-color: #f2f2f2;*/
-  padding: 92px 48px 0;
+  margin: 92px 48px 0;
   padding-left: 48px;
 
   display: flex;
