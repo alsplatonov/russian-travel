@@ -21,3 +21,15 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Black.eot');
+  src: local('Inter Black'), local('Inter-Black'),
+    url('Inter-Black.eot?#iefix') format('embedded-opentype'),
+    url('Inter-Black.woff2') format('woff2'),
+    url('Inter-Black.woff') format('woff'),
+    url('Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
