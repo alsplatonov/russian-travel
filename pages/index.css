@@ -8,9 +8,11 @@
   
 
 .page {
-  /*max-width: 1280px;*/
-  min-width: 320px;
+  /*max-width: 1280px;
+  min-width: 320px;*/
   padding: 0;
+  
+  box-sizing: border-box;
   /*display: flex;
   flex-direction: column;
 
@@ -20,10 +22,16 @@
   margin: 0 auto;
   color: #FFFFFF;
   font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /*padding-top: 28px;
   padding-left: 48px;
   padding-right: 48px;*/
   
+}
+.page-defaults {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /*
@@ -44,6 +52,8 @@
 */
 
 
+
+
 .header {
 
 box-sizing: border-box;
@@ -51,6 +61,7 @@ display: flex;
 justify-content: space-between;
 align-items: flex-end;
 padding: 28px 48px 0;
+
 
 }
 
@@ -117,29 +128,36 @@ padding: 28px 48px 0;
   padding: 0;
   box-sizing: border-box;
 
+  
+  /* max-width: 984px; */
   padding: 50px 148px 98px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+   align-items: center; 
+  /* margin: 0 auto; */
+  
 }
 
-@media screen and (max-width: 1279px) {
+/* @media screen and (max-width: 1279px) {
   .lead {
     padding: 48px 48px 92px;
+    
   }
-}
+}  */
 
 @media screen and (max-width: 1023px) {
   .lead {
     padding: 48px 0 88px;
+    /* max-width: 768px; */
   }
 }
 @media screen and (max-width: 767px) {
   .lead {
     padding: 48px 2px 64px;
+    /* max-width: 320px; */
   }
 }
-
 
 .lead__title {
   margin: 0;
@@ -198,8 +216,14 @@ padding: 28px 48px 0;
 }
 
 .lead__image {
+  max-width: 984px;
+  
   margin-bottom: 8px;
+  object-fit: cover;
+  width: 100%;
 }
+
+
 
 .lead__image:hover {
   opacity: .8;
@@ -215,7 +239,16 @@ line-height: 14px;
 
 letter-spacing: 1.5px;
 text-transform: uppercase;
+
+align-self: flex-start;
 }
+@media screen and (max-width: 1023px) {
+  .lead__caption {
+   padding-left: 24px;
+    
+  }
+}
+
 
 .intro  {
   margin: 0;
@@ -527,7 +560,7 @@ line-height: 163%;
   box-sizing: border-box;
   padding: 0;
 
-  margin: 92px 48px 0;
+  margin: 92px 0 0;
   padding-left: 48px;
   padding-right: 48px;
 
@@ -561,7 +594,7 @@ line-height: 163%;
 .cover__link {
   margin: 0 auto;
   min-height: 740px;  
-  max-width: 1184px;
+  /*max-width: 1184px;*/
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -633,6 +666,7 @@ line-height: 163%;
     font-weight: 900;
 font-size: 32px;
 line-height: 35px;
+max-width: 288px;
   }
 }
 
@@ -663,7 +697,7 @@ line-height: 35px;
 .footer {
   box-sizing: border-box;
 
-  margin: 0;
+ 
 
   padding: 92px 48px 24px;
   display: flex;
