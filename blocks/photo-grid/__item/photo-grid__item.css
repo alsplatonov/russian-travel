@@ -1,1 +1,8 @@
-.photo-grid__item {}
+.photo-grid__item {
+  object-fit: cover;
+  width: 100%;
+}
+
+.photo-grid__item:hover {
+  opacity: .8;
+}

@@ -1,1 +1,3 @@
-.header__lang-link_text-decoration-Off {}
+.header__lang-link_text-decoration-Off {
+  text-decoration-line: none;
+}

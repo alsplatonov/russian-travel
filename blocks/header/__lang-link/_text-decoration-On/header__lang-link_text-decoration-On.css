@@ -1,1 +1,3 @@
-.header__lang-link_text-decoration-On {}
+.header__lang-link_text-decoration-On {
+  text-decoration-line: underline;
+}
