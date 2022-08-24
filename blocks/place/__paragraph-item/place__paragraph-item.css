@@ -9,8 +9,6 @@
   line-height: 163%;
 }
 
-@media screen and (max-width: 767px) {
-  .place__paragraph-item:last-of-type {
-    margin-bottom: 0;
-  }
+.place__paragraph-item:last-of-type {
+  margin-bottom: 0;
 }

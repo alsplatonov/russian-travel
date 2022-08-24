@@ -14,10 +14,15 @@
   <div class="page">
     <header class="header page__defaults">
       <img class="header__logo" src="./images/header-logo.svg" alt="Путешествия по России">
-      <div class="links">
+      <!-- <div class="links">
         <a class="header__lang-link header__lang-link_text-decoration-On" target="_blank" href="#"> Ru</a>
         <a class="header__lang-link header__lang-link_text-decoration-Off" target="_blank" href="#"> En</a>
-      </div>
+      </div> -->
+      <ul class="header__lang-link">
+        <li><a class="header__lang-link-item" href="#">Ru</a></li>
+        <li><a class="header__lang-link-item header__lang-link-item_underline" href="#">En</a></li>
+      </ul>
+
     </header>
 
     <main class="content page__defaults">
@@ -26,11 +31,11 @@
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
 
         <img class="lead__image" src="images/lead-polka.jpg" alt="Путешествия по России">
-        <span class="lead__caption">Ваша полка - верхняя</span>
+        <p class="lead__caption">Ваша полка - верхняя</p>
       </section>
 
-      <section class="intro page__defaults">
-        <h3 class="intro__title">Чего мы там не видели?</h3>
+      <section class="intro">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
         <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
           провести отпуск в родной стране.
           Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга,
@@ -42,11 +47,11 @@
           интересные места, достойные вашего отпуска.
         </p>
         <ul class="intro__list">
-          <li>Часовых поясов 11</li>
-          <li>Объектов природного наследия ЮНЕСКО 12</li>
-          <li>Объектов культурного наследия ЮНЕСКО 16</li>
-          <li>Природных заповедников 105</li>
-          <li>Аэропортов 241</li>
+          <li>Часовых поясов <span class="intro__span-accent">11</span></li>
+          <li>Объектов природного наследия ЮНЕСКО <span class="intro__span-accent">12</span></li>
+          <li>Объектов культурного наследия ЮНЕСКО <span class="intro__span-accent">16</span></li>
+          <li>Природных заповедников <span class="intro__span-accent">105</span></li>
+          <li>Аэропортов <span class="intro__span-accent">241</span></li>
         </ul>
       </section>
 
@@ -65,7 +70,7 @@
         <img class="photo-grid__item" src="images/photo-grid-tuman.jpg" alt="ТУман">
       </section>
 
-      <section class="places page__defaults">
+      <section class="places">
         <div class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
@@ -186,19 +191,19 @@
       <nav>
         <ul class="footer__links">
           <li class="footer__link">
-            <a target="_blank" href="https://yandex.ru/maps" class="link footer__link">Карты</a>
+            <a target="_blank" href="https://yandex.ru/maps" class="footer__link-style">Карты</a>
           </li>
           <li class="footer__link">
-            <a target="_blank" href="https://yandex.ru/pogoda" class="link footer__link">Погода</a>
+            <a target="_blank" href="https://yandex.ru/pogoda" class="footer__link-style">Погода</a>
           </li>
           <li class="footer__link">
-            <a target="_blank" href="https://rasp.yandex.ru" class="link footer__link">Расписание</a>
+            <a target="_blank" href="https://rasp.yandex.ru" class="footer__link-style">Расписание</a>
           </li>
           <li class="footer__link">
-            <a target="_blank" href="https://calendar.yandex.ru" class="link footer__link">Календарь</a>
+            <a target="_blank" href="https://calendar.yandex.ru" class="footer__link-style">Календарь</a>
           </li>
           <li class="footer__link">
-            <a target="_blank" href="https://travel.yandex.ru" class="link footer__link">Путешествия</a>
+            <a target="_blank" href="https://travel.yandex.ru" class="footer__link-style">Путешествия</a>
           </li>
         </ul>
       </nav>

@@ -8,8 +8,9 @@
   align-items: center;
   position: relative;
   text-decoration: none;
-
-
+  opacity: 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 .cover__link:before {
@@ -20,10 +21,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../images/cover-trains.jpg);
+  /*#2a2c2f - (42,44,47) */
+  background-image: linear-gradient(rgba(42, 44, 47, 0.3), rgba(42, 44, 47, 0.3)), url(../../../images/cover-trains.jpg);
 }
 
 .cover__link:hover:before {
